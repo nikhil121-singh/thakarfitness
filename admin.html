@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Thakar Fitness</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ffc107;
+        }
+
+        .admin-container {
+            display: flex;
+        }
+
+        .sidebar {
+            background: #444;
+            color: #fff;
+            width: 250px;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .sidebar h3 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background: #ffc107;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .card table th,
+        .card table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        .card table th {
+            background: #f4f4f9;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Thakar Fitness Admin</div>
+        <nav>
+            <ul>
+                <li><a href="main.html">View Website</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>Admin Menu</h3>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#trainers">Manage Trainers</a></li>
+                <li><a href="#gallery">Manage Gallery</a></li>
+                <li><a href="#plans">Manage Plans</a></li>
+                <li><a href="#enquiries">View Enquiries</a></li>
+                <li><a href="#services">Manage Services</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="card" id="dashboard">
+                <h2>Dashboard</h2>
+                <p>Welcome to the Thakar Fitness admin panel. Use the sidebar to manage your website content and monitor activity.</p>
+            </div>
+
+            <div class="card" id="trainers">
+                <h2>Manage Trainers</h2>
+                <button class="btn">Add Trainer</button>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Specialization</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td>Trainer 1</td>
+                        <td>Strength Training</td>
+                        <td><button class="btn">Edit</button> <button class="btn">Delete</button></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card" id="gallery">
+                <h2>Manage Gallery</h2>
+                <button class="btn">Add Image</button>
+            </div>
+
+            <div class="card" id="plans">
+                <h2>Manage Plans</h2>
+                <button class="btn">Add Plan</button>
+            </div>
+
+            <div class="card" id="enquiries">
+                <h2>View Enquiries</h2>
+                <p>No new enquiries.</p>
+            </div>
+
+            <div class="card" id="services">
+                <h2>Manage Services</h2>
+                <button class="btn">Add Service</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

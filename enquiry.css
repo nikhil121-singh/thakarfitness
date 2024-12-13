@@ -1,0 +1,155 @@
+/* Base styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Background styling */
+.background {
+    background: url('Desktop - 9.png') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Add a dark gradient overlay for contrast */
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+    z-index: 0;
+}
+
+/* Cancel Button Styling */
+.top-left-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.cancel-button {
+    padding: 10px 20px;
+    background-color: rgb(225, 188, 23);
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cancel-button:hover {
+    color: #ffffff;
+    background-color: #000000;
+    box-shadow: 0 0 20px #ded33f, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 80px #ffffff;
+    transition: 0.5s ease-in-out;
+}
+
+/* Form container */
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    position: relative;
+    z-index: 1;
+}
+
+.form-container h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffb400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Input fields */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ddd;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 16px;
+    transition: border 0.3s ease, background 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #ffb400;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+/* Submit button */
+.submit-button {
+    background: linear-gradient(45deg, #ff8c00, #ffb400);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 184, 0, 0.6);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(255, 184, 0, 0.4);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #111;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}

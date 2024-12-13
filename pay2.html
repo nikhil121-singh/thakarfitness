@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - FitLife Gym</title>
+    <link rel="stylesheet" href="pay2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="plans.html"><button class="nav-btn back-btn">Back</button></a>    
+        </nav>
+    </header>
+<main>
+    <section id="payment">
+        <h2 class="dood">Choose Your Payment Method</h2>
+        <div class="payment-grid">
+            <div class="payment-card" id="credit-card">
+                <i class="fas fa-credit-card"></i>
+                <h3>Credit/Debit Card</h3>
+                <form id="card-form">
+                    <input type="text" placeholder="Card Number" required>
+                    <input type="text" placeholder="Card Holder Name" required>
+                    <div class="card-details">
+                        <input type="text" placeholder="MM/YY" required>
+                        <input type="text" placeholder="CVV" required>
+                    </div>
+                    <button type="submit">Pay Now</button>
+                    <div class="error-message" id="card-error"></div>
+                </form>
+            </div>
+
+            <div class="payment-card" id="upi">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>UPI Payment</h3>
+                <form id="upi-form">
+                    <input type="text" placeholder="UPI ID" required>
+                    <button type="submit">Pay Now</button>
+                    <div class="error-message" id="upi-error"></div>
+                </form>
+            </div>
+
+            <div class="payment-card" id="netbanking">
+                <i class="fas fa-university"></i>
+                <h3>Net Banking</h3>
+                <p>Select your bank to proceed with net banking payments.</p>
+                <button onclick="alert('Redirecting to net banking...')">Proceed</button>
+            </div>
+
+            <div class="payment-card" id="wallets">
+                <i class="fas fa-wallet"></i>
+                <h3>Wallets</h3>
+                <p>Use your favorite wallets like Paytm, Google Pay, etc.</p>
+                <button onclick="alert('Redirecting to wallet payment...')">Proceed</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <p>&copy; 2004 Thakar Fitness. All rights reserved.</p>
+        </div>
+
+        <div class="footer-center">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <div class="footer-right">
+            <p>Contact: +91 9574051010</p>
+            <p>Email: thakarfitness55@gmail.com</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('card-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const cardNumber = this.querySelector('input[type="text"]').value;
+        const errorDiv = document.getElementById('card-error');
+        if (cardNumber.length < 16) {
+            errorDiv.textContent = "Please enter a valid card number.";
+            errorDiv.style.color = 'red';
+        } else {
+            alert('Processing credit/debit card payment...');
+            errorDiv.textContent = '';
+            // Integrate with a payment gateway here
+        }
+    });
+
+    document.getElementById('upi-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const upiID = this.querySelector('input[type="text"]').value;
+        const errorDiv = document.getElementById('upi-error');
+        if (!upiID.includes('@')) {
+            errorDiv.textContent = "Please enter a valid UPI ID.";
+            errorDiv.style.color = 'red';
+        } else {
+            alert('Processing UPI payment...');
+            errorDiv.textContent = '';
+            // Integrate with a payment gateway here
+        }
+    });
+</script>
+
+</body>
+</html>

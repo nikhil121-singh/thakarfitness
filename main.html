@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thakar Fitness - Services</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" sizes="240x240" href="WhatsApp_Image_2024-08-27_at_19.22.58_285a632b-removebg-preview.ico" type="image/x-icon">
+    <style>
+        /* Popup Styles */
+        .popup {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 600px;
+            height: 600px;
+
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(6px);
+            /* For Safari */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow to lift the element */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            /* Transparent border */
+            color: #fff;
+
+        }
+
+        .popup h2 {
+            margin-bottom: 20px;
+        }
+
+        .popup form {
+            display: flex;
+            flex-direction: column;
+            gap: 23.5px;
+        }
+
+        .popup input[type="text"],
+        .popup input[type="email"],
+        .popup input[type="number"],
+        .popup input[type="tel"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .popup button {
+            padding: 10px;
+            background-color: rgb(225, 188, 23);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .popup button:hover {
+            background-color: #000;
+        }
+
+        .close-btn {
+            cursor: pointer;
+            color: red;
+            font-size: 20px;
+            float: right;
+            margin-top: -15px;
+            margin-right: -15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./Photo/WhatsApp_Image_2024-08-27_at_19.22.58_285a632b-removebg-preview.png" alt="Thakar Fitness Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a class="tab" href="main.html">Home</a></li>
+                <li><a class="tab" href="trainers.html">Trainers</a></li>
+                <li><a class="tab" href="image.html">Gallery</a></li>
+                <li><a class="tab" href="plans.html">Plans</a></li>
+                <a href="enquiry.html" class="glow-button">Send Enquiry</a>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Unlock Your <br>Full Potential</h1>
+            <h2>at THAKAR FITNESS</h2>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h3>Our Services</h3>
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="./Photo/treadmill.png">
+                <p>Functional Training</p>
+            </div>
+            <div class="service-card">
+                <img src="./Photo/weights.png">
+                <p>Personal Training</p>
+            </div>
+            <div class="service-card">
+                <img src="./Photo/barbell.png" alt="Strength Training">
+                <p>Strength Training</p>
+            </div>
+            <div class="service-card">
+                <img src="./Photo/exercise.png" alt="Sports Training">
+                <p>Sports Training</p>
+            </div>
+            <div class="service-card">
+                <img src="./Photo/gym.png" alt="Group Training">
+                <p>Group Training</p>
+            </div>
+            <div class="service-card">
+                <img src="./Photo/dumbbell.png" alt="Nutrition Counseling">
+                <p>Nutrition Counseling</p>
+            </div>
+            <div class="service-card">
+                <img src="./Photo/OIP__4_-removebg-preview.png" alt="Equipment Availability">
+                <p>Equipment Availability</p>
+            </div>
+            <div class="service-card">
+                <img src="./Photo/OIP__5_-removebg-preview.png" alt="Regular Checkups">
+                <p>Regular Checkups</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <h3>ABOUT US</h3>
+
+        <!-- First Video Block -->
+        <div class="video-block">
+            <div class="video-container">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/r-T6UGRXhls"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video-description">
+                <h4>Introduction</h4>
+                <p>The video of Thakar Fitness Gym is designed to inspire you towards achieving your fitness goals.<br>
+                    It
+                    showcases the gym’s high-quality facilities, expert trainers,<br> and a variety of training
+                    programs.
+                    Thakar Fitness Gym motivates you to embrace a healthy<br> and fit lifestyle, whether your goal is
+                    weight
+                    loss, muscle gain, or simply maintaining an active life.</p>
+            </div>
+        </div>
+
+        <!-- Second Video Block -->
+        <div class="video-block">
+            <div class="video-container"> <iframe width="300" height="200" src="https://www.youtube.com/embed/r-T6UGRXhls"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video-description">
+                <h4>Transformation Story 2</h4>
+                <p>
+                    The video of Thakar Fitness Gym is designed to inspire you towards achieving your fitness goals.<br>
+                    It
+                    showcases the gym’s high-quality facilities, expert trainers,<br> and a variety of training
+                    programs.
+                    Thakar Fitness Gym motivates you to embrace a healthy<br> and fit lifestyle, whether your goal is
+                    weight
+                    loss, muscle gain, or simply maintaining an active life. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section>
+        <div class="location-container">
+            <div class="map">
+                <h2>Our Location</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.2029197512657!2d72.96056816878833!3d21.150043921421446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be05bb4a1b15347%3A0xa9d25bd26c3b20fd!2sThakar%20Fitness!5e0!3m2!1sen!2sin!4v1727673602020!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="address">
+                <h2>Our Aim:</h2>
+                <p class="aim">The aim of Thakar Fitness Gym is to inspire and empower individuals to<br> lead healthier
+                    lives by
+                    providing a comprehensive fitness experience.<br> Our goal is not just to offer access to premium
+                    equipment and training programs,<br> but to create an environment that encourages consistency,
+                    motivation, and personal growth. We aim to support our members in achieving their fitness
+                    objectives—whether it's weight loss, muscle gain, or overall wellness—by offering expert guidance,
+                    personalized training, and a strong sense of community</p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <h3>Address:</h3>
+            <p>102 Sai Point, Chalthan road, Chalthan</p>
+        </div>
+    </section>
+</di
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2004 Thakar Fitness. All rights reserved.</p>
+            </div>
+
+            <div class="footer-center">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="footer-right">
+                <p>Contact: +91 9574051010</p>
+                <p>Email: thakarfitness55@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/6b5edd445f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+body{
+    background-image: url("3d-render-grunge-style-room-with-foggy-atmosphere.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registration-form {
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 60%; /* Width of the page */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Border effect */
+    transition: transform 0.3s; 
+    color: aliceblue;
+}
+
+.registration-form:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #333; /* Dark border color */
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.05); /* Light background for inputs */
+    color: #ffffff; /* Dark text */
+    transition: all 0.3s; /* Smooth transition */
+}
+
+input:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: #ffcc00; /* Highlight border on hover */
+    box-shadow: 0 0 5px #ffcc00; /* Glow effect */
+}
+
+button {
+    background: #ffcc00; /* Button color */
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Initial shadow */
+}
+
+button:hover {
+    background: #ff4040; /* Lighter on hover */
+    box-shadow: 0 0 20px #ffd700;
+    color: #000000;
+     /* Glowing effect on hover */
+}
+
+button:active {
+    transform: translateY(2px); /* Downside effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow when pressed */
+}
+
+button:focus {
+    outline: none; /* Remove outline on focus */
+}

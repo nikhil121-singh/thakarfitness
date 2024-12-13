@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership Plans</title>
+    <link rel="stylesheet" href="plan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./Photo/WhatsApp_Image_2024-08-27_at_19.22.58_285a632b-removebg-preview.png" alt="Thakar Fitness Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a class="tab" href="main.html">Home</a></li>
+                <li><a class="tab" href="trainers.html">Trainers</a></li>
+                <li><a class="tab" href="image.html">Gallery</a></li>
+                <li><a class="tab" href="plans.html">Plans</a></li>
+                <a href="enquiry.html" class="glow-button">Send Enquiry</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="plans">
+            <h2>Membership Plans</h2>
+            <div class="plans-container">
+                <!-- Basic Plan -->
+                <div class="plan" onclick="toggleDetails('Basic Plan')">
+                    <h3>Monthly Plan</h3>
+                    <p>Price: <strong>₹1000/month</strong></p>
+                    <p>Access: Gym facilities during regular hours</p>
+                    <div class="plan-details" id="Basic-Plan-details">
+                        <p>The Basic Plan includes access to all gym facilities during standard hours, group classes,
+                            and free orientation sessions.</p>
+                        <a href="pay2.html" class="proceed-button">Proceed</a>
+                        <!-- Payment Gateway Link -->
+                    </div>
+                </div>
+
+                <!-- Standard Plan -->
+                <div class="plan" onclick="toggleDetails('Standard Plan')">
+                    <h3>Trimester-Plan</h3>
+                    <p>Price: <strong>₹2800/month</strong></p>
+                    <p>Access: 24/7 gym access</p>
+                    <div class="plan-details" id="Standard-Plan-details">
+                        <p>The Standard Plan provides you with 24/7 access to gym facilities, cardio, strength
+                            equipment, and participation in select group classes.</p>
+                        <a href="pay2.html" class="proceed-button">Proceed</a>
+                        <!-- Payment Gateway Link -->
+                    </div>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="plan" onclick="toggleDetails('Premium Plan')">
+                    <h3>annual Plan</h3>
+                    <p>Price: <strong>₹12000/month</strong></p>
+                    <p>Access: 24/7 access + personal training</p>
+                    <div class="plan-details" id="Premium-Plan-details">
+                        <p>The Premium Plan offers unlimited 24/7 access to all facilities, personal training sessions,
+                            and priority class booking.</p>
+                        <a href="pay2.html" class="proceed-button">Proceed</a>
+                        <!-- Payment Gateway Link -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2004 Thakar Fitness. All rights reserved.</p>
+            </div>
+
+            <div class="footer-center">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="footer-right">
+                <p>Contact: +91 9574051010</p>
+                <p>Email: thakarfitness55@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/6b5edd445f.js" crossorigin="anonymous"></script>
+    <!-- Footer closed -->
+    <script src="https://kit.fontawesome.com/6b5edd445f.js" crossorigin="anonymous"></script>
+    <script>
+        function toggleDetails(planName) {
+            const detailsDiv = document.getElementById(planName.replace(/\s+/g, '-') + '-details');
+            const allDetails = document.querySelectorAll('.plan-details');
+
+            // Hide other details
+            allDetails.forEach(detail => {
+                if (detail !== detailsDiv) {
+                    detail.style.display = 'none';
+                }
+            });
+
+            // Toggle the clicked plan details
+            detailsDiv.style.display = detailsDiv.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+     <script>
+        // Show popup
+        const joinUsBtn = document.getElementById('joinUsBtn');
+        const registrationPopup = document.getElementById('registrationPopup');
+        const closePopup = document.getElementById('closePopup');
+
+        joinUsBtn.addEventListener('click', function () {
+            registrationPopup.style.display = 'flex'; // Show the popup
+        });
+
+        closePopup.addEventListener('click', function () {
+            registrationPopup.style.display = 'none'; // Hide the popup
+        });
+
+        // Hide popup when clicking outside of it
+        window.addEventListener('click', function (event) {
+            if (event.target === registrationPopup) {
+                registrationPopup.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

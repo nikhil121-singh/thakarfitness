@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #1d1f27;
+  color: #ffffff;
+  animation: fadeIn 1.5s ease-in-out;
+  background-image: url('gym-background.jpg'); /* Add your background image */
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.logo img {
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 40px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 15px 20px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 7px;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 20px #dec716, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 80px #ffffff;
+}
+
+/* Button Styling */
+.glow-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(225, 188, 23);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.3s;
+  position: relative;
+}
+
+.glow-button:hover {
+  color: #ffffff;
+  background-color: #000000;
+  box-shadow: 0 0 20px #ded33f, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 80px #ffffff;
+  transition: 0.5s ease-in-out;
+}
+
+main {
+  flex: 1; /* Ensures that the main section grows and pushes the footer to the bottom */
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.circle1, .circle2 {
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px; /* Increased size */
+  width: 400px; /* Increased size */
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.circle1:hover, .circle2:hover {
+  transform: scale(1.05); /* Image hover animation */
+}
+
+.circle1 {
+  margin-top: 130px;
+  margin-left: 50px;
+  background-image: url("KAMLESH.jpg");
+}
+
+.circle2 {
+  margin-top: 50px;
+  margin-left: 60%;
+  background-image: url("C:/xampp/htdocs/Loginpage/Photo/images.jpeg");
+}
+
+/* Footer Styling */
+footer {
+  background-color: #111;
+  padding: 20px 0;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-left p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-center {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-center .social-icon {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer-center .social-icon:hover {
+  color: #f4b400;
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-right p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+.info-text-1 {
+  position: absolute;
+  top: 250px; /* Adjusted top position */
+  left: 700px; /* Adjusted left position */
+  color: #fff; /* Text color */
+  font-size: 20px; /* Font size */
+  padding: 10px; /* Padding for better readability */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.info-text-2 {
+  position: absolute;
+  top: 800px; 
+  left: 50px; 
+  color: #fff; 
+  font-size: 20px;
+  padding: 10px; /* Padding for better readability */
+  border-radius: 5px; /* Rounded corners */
+}
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+      transform: translateY(50px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}

@@ -1,0 +1,131 @@
+*{
+    width: 100%;
+}
+.page3 {
+    width: 1570px;
+    height: 850px;
+    left: 0px;
+    top: 2323px;
+    position: absolute;
+}
+
+.page1 {
+    width: 1570px;
+    height: 833px;
+    left: 0px;
+    top: 180px;
+    position: absolute;
+}
+
+.head {
+    width: 1570px;
+    height: 180px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: linear-gradient(0deg, black 0%, black 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%)
+}
+
+.train {
+    padding: 10px;
+    left: 319px;
+    top: 55px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+}
+
+.tab1 {
+    width: 161px;
+    height: 50px;
+    color: white;
+    font-size: 40px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.tab2 {
+    width: 161px;
+    height: 50px;
+    color: white;
+    font-size: 36px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.equip {
+    padding: 10px;
+    left: 556px;
+    top: 57px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex
+}
+
+.transf {
+    padding: 10px;
+    left: 856px;
+    top: 54px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex
+}
+
+.tab3 {
+    color: white;
+    font-size: 40px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.gall {
+    padding: 10px;
+    left: 1288px;
+    top: 54px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex
+}
+
+.tab4 {
+    color: white;
+    font-size: 40px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.logo {
+    width: 250px;
+    height: 180px;
+    left: 27px;
+    top: 0px;
+    position: absolute
+}
+
+.join {
+    width: 292px;
+    height: 116px;
+    padding: 10px;
+    left: 27px;
+    top: 760px;
+    position: absolute;
+    background: black;
+    box-shadow: 25px 20px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="enquiry.css">
+</head>
+<body>
+    <!-- Cancel Button -->
+    <div class="top-left-button">
+        <button class="cancel-button" onclick="window.history.back();">Cancel</button>
+    </div>
+
+    <div class="background">
+        <div class="form-container">
+            <h1>Enquiry</h1>
+            <form action="process_enquiry.php" method="post">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first_name" placeholder="Enter your first name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last_name" placeholder="Enter your last name">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number">
+                </div>
+                <button type="submit" class="submit-button">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2024 Thakar Fitness. All rights reserved.</p>
+            </div>
+            <div class="footer-center">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-right">
+                <p>Contact: +91 9574051010</p>
+                <p>Email: thakarfitness55@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
